@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css';
+import { FaSearchDollar } from 'react-icons/fa';
 
 function Header() {
     return (
@@ -17,7 +18,7 @@ function Header() {
 
             <div className='header__search'>
                 <input type='text' className='header__searchInput' />
-                <img src='' 
+                <FaSearchDollar
                      alt='Search Icon' 
                      className='header__searchIcon' 
                 />
