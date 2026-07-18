@@ -41,6 +41,16 @@ function Header() {
                     <span className='header__optionLineOne'>Your</span>
                     <span className='header__optionLineTwo'>Prime</span>
                 </div>
+
+                <div className="header__optionBasket">
+                    {/* Insert a Shopping Basket icon here 
+                    
+                    <Shoppingbasket />
+                    <span className = "header_optionLineTwo
+                    header__basketCount"> 0 </span>
+                    
+                    */}
+                </div>
         </div>
     </div>
     );
