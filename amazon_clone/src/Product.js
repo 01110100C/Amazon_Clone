@@ -1,7 +1,7 @@
 import React from 'react'; 
 import "./Product.css"; 
 
-function Product() {
+function Product({title, image, price, rating}) {
   return (
 
     <div className="product">
@@ -9,20 +9,26 @@ function Product() {
 
             {/* First Product */}
         <div className="product__info">
-            <p>The Lean Startup</p>
+            <p>{title}</p>
             <p className="product__price">
                 <small>$</small>
-                <strong>19.99</strong>
+                <strong>{price}</strong>
             </p>
 
             <div className="product__rating">
-                <p></p>
+
+                {/* Rating function to automatically apply how ever many stars are needed
+                for the rating given on the home page */}
+
+                {Array(rating)
+                .fill()
+                .map((_, i) => (
+                    <p>⭐️</p>
+                ))}
+
             </div>
         </div>
-        {/* Find Image of item
-           <img src=""
-        
-        */}
+        <img className="product__image" src={image} alt={title} />
 
         {/* Second Product */}
         <button>Add To Basket</button>
